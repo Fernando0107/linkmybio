@@ -8,14 +8,18 @@ environment = os.getenv("ENVIRONMENT", "development")
 
 app = Flask(__name__)
 
+info = yaml.load(open('links.yaml', 'r'))  # info
 
+print(info['picture'])
+links = []
 
-@app.route('/')                                         #Es la ruta "home"
+for i in range(len(info['links'])):
+    print(info['links'][i].get(i+1).get('link'))
+
+@app.route('/bio')                                         #Es la ruta "home"
 def index():
-    #return render_template('index.html')
-    return render_template("index.html")
 
-
+    return render_template("bio.html", name=info['name'], image=info['picture'], description=info['shortbio'])
 
 
 if __name__ == '__main__':
