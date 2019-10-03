@@ -1,1 +1,1 @@
-web: python bio.py runserver 0.0.0.0:500
+web: python bio.py runserver 0.0.0.0:$PORT
