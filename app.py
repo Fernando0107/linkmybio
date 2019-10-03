@@ -16,7 +16,7 @@ for i in range(len(info['links'])):
     x = info['links'][i].get(i+1).get('link')
     links.append(x)
 
-@app.route('/bio')                                         #Es la ruta "home"
+@app.route('/')                                         #Es la ruta "home"
 def index():
 
     return render_template("bio.html", name=info['name'], image=info['picture'], description=info['shortbio'], link=links)
