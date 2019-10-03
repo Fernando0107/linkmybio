@@ -1,1 +1,1 @@
-web: python bio.py
+web: gunicorn app:abio.py
