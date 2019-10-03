@@ -19,18 +19,32 @@ links:
         link: "https://twitter.com/57Fernando"
         description: "check my facebook"
     - 2:
+        name: "Youtube"
         enable: True
-        link: "https://www.facebook.com/juan.f.gonzalez.18"
+        link: "https://www.youtube.com/"
         description: "check my facebook"
     - 3:
+        name: "Facebook"
         enable: True
-        link: "https://www.instagram.com/fernando_g07/"
+        link: "https://www.facebook.com/juan.f.gonzalez.18"
         description: "How Cool my photos are in instagram :camera:"
     - 4:
+        name: "Google"
         enable: False
-        link: "lorem ipsum"
+        link: "https://myaccount.google.com/?utm_source=OGB&tab=mk&utm_medium=act&pli=1"
         description: "lorem ipsum dorem"
     - 5:
+        name: "Instagram"
         enable: False
-        link: "http://etc.etc"
+        link: "https://www.instagram.com/fernando_g07/"
+        description: "any other link you want your followers to see"
+    - 6:
+        name: "Dropbox"
+        enable: False
+        link: "https://www.dropbox.com/?landing=dbv2"
+        description: "any other link you want your followers to see"
+    - 7:
+        name: "Github"
+        enable: False
+        link: "https://github.com/Fernando0107"
         description: "any other link you want your followers to see"

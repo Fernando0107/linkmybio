@@ -10,16 +10,20 @@ app = Flask(__name__)
 
 info = yaml.load(open('links.yaml', 'r'))  # info
 
-print(info['picture'])
+
 links = []
 
 for i in range(len(info['links'])):
-    print(info['links'][i].get(i+1).get('link'))
+    x = info['links'][i].get(i+1).get('link')
+    links.append(x)
+
+print(links[0])
+
 
 @app.route('/bio')                                         #Es la ruta "home"
 def index():
 
-    return render_template("bio.html", name=info['name'], image=info['picture'], description=info['shortbio'])
+    return render_template("bio.html", name=info['name'], image=info['picture'], description=info['shortbio'], link=links)
 
 
 if __name__ == '__main__':
