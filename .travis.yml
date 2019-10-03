@@ -17,3 +17,5 @@ deploy:
   app: link-my-bio-fer
   on:
     repo: Fernando0107/https://github.com/Fernando0107/linkmybio
+
+script: app.py
