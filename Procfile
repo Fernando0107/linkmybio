@@ -1,1 +1,1 @@
-web: gunicorn bio.py
+web: python bio.py
