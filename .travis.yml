@@ -1,4 +1,7 @@
 deploy:
   provider: heroku
-  api_key: 00ee7257-5e8c-408e-bc03-7bacef4bc45d
-  app: app
+  api_key:
+    secure: 474318ef-2c76-42fd-8cf8-20e5a6dcde5a
+  app: link-my-bio-fer
+  on:
+    repo: Fernando0107/https://github.com/Fernando0107/linkmybio
