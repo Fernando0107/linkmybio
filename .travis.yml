@@ -1,35 +1,4 @@
-language: python
-
-#Python Version
-python:
-
-  - "3.7"
-
-# Install dependencies and libraries 
-install:
-
-  - pip install -r requirements.txt
-
-# command to run tests
-
-jobs:
-  include:
-    - stage: unit tests
-      script: "Running unit tests (1)"
-    - stage: unit tests
-      script: "Running unit tests (2)"
-    - stage: deploy to staging
-      script: skip
-      deploy: &heroku
-        provider: heroku
-        app: sf-stages-staging
-        api_key: 00ee7257-5e8c-408e-bc03-7bacef4bc45d
-    - stage: test staging
-      script: 'curl https://link-my-bio-fer.herokuapp.com/'
-    - stage: deploy to production
-      script: skip
-      deploy:
-        <<: *heroku
-        app: sf-stages-production
-    - stage: test production
-      script: 'curl https://link-my-bio-fer.herokuapp.com/'
+deploy:
+  provider: heroku
+  api_key: 00ee7257-5e8c-408e-bc03-7bacef4bc45d
+  app: app
