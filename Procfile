@@ -1,1 +1,1 @@
-web: gunicorn app:abio.py
+web: gunicorn app:app
