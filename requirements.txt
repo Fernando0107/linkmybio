@@ -7,5 +7,3 @@ Flask-Script==2.0.5
 Flask-Testing==0.4.2
 Flask-WTF==0.10.2
 Jinja2==2.7.3
-yaml
-optparse
