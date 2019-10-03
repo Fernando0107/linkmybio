@@ -1,7 +1,6 @@
 from flask import Flask, render_template, jsonify, redirect
 import yaml
 import os
-import optparse
 
 developer = os.getenv("DEVELOPER", "User")
 environment = os.getenv("ENVIRONMENT", "development")
