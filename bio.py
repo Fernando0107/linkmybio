@@ -17,9 +17,6 @@ for i in range(len(info['links'])):
     x = info['links'][i].get(i+1).get('link')
     links.append(x)
 
-print(links[0])
-
-
 @app.route('/bio')                                         #Es la ruta "home"
 def index():
 
@@ -27,4 +24,4 @@ def index():
 
 
 if __name__ == '__main__':
-  app.run(host="0.0.0.0", debug=True)
+  app.run(debug=True)
