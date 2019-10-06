@@ -90,7 +90,25 @@ See you can add any style to your own project. These are only ideas.
 
 # Usage
 
-> put your code here
+> Code:
+
+
+```bash
+
+Go to my github repo https://github.com/Fernando0107/linkmybio
+
+Then, in your favorite shell/terminal, type:
+    - git clone https://github.com/Fernando0107/linkmybio
+
+    - cd linkmybio
+
+    - pyhton app.py
+
+Then, you will be able to go to you localhost and see the page running!
+```
+
+> Heroku link: https://link-my-bio-fer.herokuapp.com/
+
 
 
 # Extras:
