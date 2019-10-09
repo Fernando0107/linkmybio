@@ -1,3 +1,3 @@
 
-def test_add():
-  assert 1 + 1 == 2
+def test_brain():
+  assert 14 - 7 == 7
