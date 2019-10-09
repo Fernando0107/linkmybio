@@ -18,4 +18,4 @@ deploy:
   on:
     repo: Fernando0107/https://github.com/Fernando0107/linkmybio
 
-script: python app.py
+script: pytest
